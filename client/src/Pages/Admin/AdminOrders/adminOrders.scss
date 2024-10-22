@@ -1,0 +1,103 @@
+.admin-orders-page {
+  padding: 20px;
+  background-color: var(--color-blanco-roto);
+
+  max-width: 800px; 
+  margin: 20px auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+
+  .admin-orders-title {
+    font-size: 2rem;
+    color: rgb(36, 35, 35);
+    margin-bottom: 20px;
+    
+  }
+
+  .orders-list {
+    list-style: none;
+    padding: 0;
+
+    .order-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px; // Espaciado entre las tarjetas
+
+      .order-info {
+        margin-bottom: 10px;
+
+        p {
+          margin: 5px 0;
+          font-size: 1rem;
+          color: #333;
+        }
+      }
+
+      .order-actions {
+        display: flex;
+        justify-content: space-between;
+
+        .admin-orders-btn {
+          padding: 8px 12px;
+          border-radius: 20px;
+          border: none;
+          font-size: 0.9rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &-approve {
+            background-color: rgb(36, 35, 35);
+            color: white;
+
+            &:hover {
+              background-color: #555555;
+            }
+          }
+
+          &-pending {
+            background-color: #565656;
+            color: white;
+
+            &:hover {
+              background-color: #777;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Media query para pantallas pequeñas
+  @media (max-width: 768px) {
+    .orders-list {
+      .order-card {
+        padding: 15px;
+        margin-bottom: 15px;
+
+        .order-info {
+          margin-bottom: 15px;
+
+          p {
+            font-size: 0.95rem;
+          }
+        }
+
+        .order-actions {
+          flex-direction: row; // Cambiar a fila para que los botones no ocupen todo el ancho
+          justify-content: flex-start; // Alinear los botones a la izquierda
+
+          .admin-orders-btn {
+            width: auto; // Cambiar a ancho automático
+            margin-right: 10px; // Espaciado entre botones
+
+            &:last-child {
+              margin-right: 0; // Sin margen a la derecha en el último botón
+            }
+          }
+        }
+      }
+    }
+  }
+}

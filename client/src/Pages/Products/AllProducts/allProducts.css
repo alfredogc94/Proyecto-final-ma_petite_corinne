@@ -1,0 +1,92 @@
+.all-products-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  background-color: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.titulos {
+  font-family: 'Tangerine', cursive;
+  font-size: 4rem; 
+  text-align: center;
+}
+
+
+@media (max-width: 992px) {
+  .titulos {
+    font-size: 3.5rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .titulos {
+    font-size: 2.5rem;
+  }
+}
+
+
+.custom-button {
+  
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+
+.pagination-button {
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  min-width: 40px;
+  
+  
+}
+
+
+@media (max-width: 992px) {
+  .pagination-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    min-width: 35px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .pagination-container {
+    gap: 0.3rem;
+  }
+
+  .pagination-button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    min-width: 30px;
+   
+  }
+}
+
+
+.pagination-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}

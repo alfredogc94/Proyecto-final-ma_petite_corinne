@@ -1,0 +1,87 @@
+/* OneProduct.css */
+.one-product-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* Espacio entre elementos */
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 50%;
+  max-width: 300px; /* Ajustar según tus preferencias */
+  height: auto;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Estilos responsivos para las cards */
+.card {
+  margin-bottom: 1.5rem; /* Espacio entre cards */
+}
+.arrow-button {
+  background-color: #fff; /* Color de fondo */
+  border: none; /* Quitar bordes */
+  padding: 0.5rem 1.2rem; /* Aumentar el espaciado */
+  font-size: 1.5rem; /* Tamaño del icono */
+  color: #333; /* Color del icono */
+  border-radius: 50%; /* Botones redondos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin: 0 1rem; /* Espacio alrededor de las flechas */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.arrow-button:hover {
+  background-color: #f0f0f0; /* Fondo al hacer hover */
+  transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+.product-image {
+  max-width: 70%; /* Ajustar tamaño máximo de la imagen al 80% del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 0 2rem; /* Añadir espacio entre la imagen y las flechas */
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; /* Espacio debajo del carrusel */
+}
+

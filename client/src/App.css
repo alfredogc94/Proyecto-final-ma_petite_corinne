@@ -1,0 +1,157 @@
+:root {
+  --color-rosado-oscuro: #e3774d;
+  --color-rosado-claro: #ffe4d9;
+  --color-rosado-suave: #ec896c;
+  --color-rosado-pastel: #fcd7a5;
+  --color-rosado-light: #fcfba3;
+  --color-rosado-dulce: #cc6d48;
+  --color-rosado-candente: #fed1b8;
+  --color-blanco-roto: #F5F5F5;
+  --color-gris-oscuro: #646262;
+  --color-gris-claro: #b4acaa;
+  --color-gris-suave: #e4e3e2;
+  --color-pink: #fedbe3;
+  --color-amarillo-suave: #ffd3cd;
+  --color-amarillo-pastel: #ffeae6;
+  --color-naranja: #efdbcd;
+}
+
+body {
+  background-color: var(--color-blanco-roto);
+  color: var(--color-blanco);
+}
+ 
+.button {
+  background-color: var(--color-rosado-claro);
+  color: var(--color-gris-oscuro);
+  border: 1px solid var(--color-rosado-suave);
+}
+ 
+ 
+.footer {
+  background-color: var(--color-amarillo-suave);
+}
+
+
+ 
+.custom-button {
+  background-color: #000;
+  color: #FFF;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+ 
+ .button-custom:disabled {
+  background-color: #ccc; 
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.6; 
+}
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+ 
+
+  display: inline-block;
+  text-align: center;
+ 
+ 
+  &:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+    color: white;
+  }
+ 
+  &:active {
+    transform: translateY(0);
+  }
+ 
+ 
+  
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+.titulos{
+    font-family: 'Tangerine', cursive;
+    font-size: 8rem;
+    
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.por-que-elegir {
+  padding: 2rem 1rem;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature {
+    margin-bottom: 2rem;
+    text-align: center; 
+  }
+
+  .feature-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .feature-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+  }
+
+  .call-to-action {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+  }
+
+  .call-to-action p {
+    margin-bottom: 0.5rem;
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+
+    .feature-title {
+      font-size: 1.5rem;
+    }
+
+    .feature-text {
+      font-size: 0.9rem;
+    }
+
+    .call-to-action {
+      font-size: 1rem;
+    }
+
+    .img-ma-petite{
+      min-width: 45%;
+    }
+  }
+}
+
+
+

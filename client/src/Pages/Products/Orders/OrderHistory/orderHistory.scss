@@ -1,0 +1,12 @@
+.ppal-mis-pedidos {
+  background-color: var(--color-blanco-roto);
+  width: 75%;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;              /* Activar Flexbox */
+  flex-direction: column;      /* Alinear el contenido en una columna */
+  align-items: center;         /* Centrar horizontalmente */
+  justify-content: center;     /* Centrar verticalmente */
+  padding: 2rem;               /* Añadir algo de espacio interno */
+}

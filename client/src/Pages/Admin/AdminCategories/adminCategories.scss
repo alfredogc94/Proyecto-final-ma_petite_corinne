@@ -1,0 +1,56 @@
+.admin-categories-page {
+  padding: 20px;
+  background-color: var(--color-blanco-roto);
+  max-width: 800px; 
+  margin: 20px auto; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.category-card {
+  flex: 1 1 calc(33.333% - 20px); /* Ajusta a tres tarjetas por fila */
+  min-width: 220px; /* Ancho mínimo de la tarjeta */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.category-image {
+  width: 200px;
+  height: auto; /* Mantener proporción de la imagen */
+  object-fit: cover; /* Mantener proporción de la imagen */
+  
+}
+
+.boton-categories{
+    transition: background-color 0.3s ease;
+      box-shadow: 0 4px 15px;
+      border: none;
+      outline: none;
+      
+    &:hover {
+      background-color: #444;
+    }
+  
+    &:active {
+      background-color: #222;
+    }
+  }
+
+
+.icon-edit,
+.icon-delete {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.action-icons {
+  display: flex;
+  justify-content: space-between; /* Espacio entre iconos */
+  margin-top: 10px; /* Margen superior para los iconos */
+}

@@ -1,0 +1,130 @@
+.admin-users-container {
+  padding: 20px;
+  background-color: #fff; // Fondo blanco
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  max-width: 800px; 
+  margin: 20px auto; 
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .user-list-container { 
+    .user-list {
+      list-style-type: none;
+      padding: 0;
+
+      .user-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+
+        &:hover {
+          background-color: #e9ecef;
+        }
+
+        .user-info {
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+        }
+
+        .user-details {
+          text-align: left;
+          flex: 1;
+
+          .user-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+          }
+
+          .user-email {
+            font-size: 1rem;
+            color: #666;
+          }
+        }
+
+        .user-type {
+          text-align: center;
+          margin: 0 20px;
+          font-size: 0.9rem;
+          color: #000;
+          flex-basis: 100px;
+        }
+
+        .user-action {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+
+          .action-icon {
+            font-size: 1.5rem;
+            color: #007bff; // Color por defecto
+
+            &.disabled {
+              color: red; // Color para icono deshabilitado
+            }
+            &.email {
+              color: black; // Color para icono de correo pendiente
+            }
+            &.tick {
+              color: green; // Color para icono habilitado
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .boton-panel-control-users{
+  transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px;
+    border: none;
+    
+  &:hover {
+    background-color: #444;
+  }
+
+  &:active {
+    background-color: #222;
+  }
+}
+
+
+  .user-card {
+    position: relative; // Asegúrate de que la tarjeta sea el contenedor para la posición absoluta
+    .action-container {
+      position: absolute; // Posicionar de manera absoluta
+      bottom: 10px; // Ajusta según sea necesario
+      right: 10px; // Ajusta según sea necesario
+      display: flex;
+      justify-content: flex-end; // Alinear a la derecha
+      align-items: center;
+
+      // Estilos específicos para los iconos en versión móvil
+      .user-action-bottom {
+        cursor: pointer; // Cambiar cursor al pasar sobre el icono
+        .action-icon {
+          font-size: 1.5rem; // Tamaño del icono
+          &.disabled {
+            color: red; // Color para icono deshabilitado
+          }
+          &.email {
+            color: black; // Color para icono de correo pendiente
+          }
+          &.tick {
+            color: green; // Color para icono habilitado
+          }
+        }
+      }
+    }
+  }
+}

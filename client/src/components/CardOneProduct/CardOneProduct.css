@@ -1,0 +1,19 @@
+.product-card {
+  width: 240px; /* Ancho fijo para uniformidad */
+  height: 400px; /* Altura fija para uniformidad */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: transform 0.2s ease; 
+  margin: auto;/* Transición suave */
+}
+
+.product-card:hover {
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.card-image {
+  border-radius: 0.25rem;
+  height: 200px; /* Altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+  border-top-left-radius: 10px; /* Esquinas redondeadas */
+  border-top-right-radius: 10px; /* Esquinas redondeadas */
+}
